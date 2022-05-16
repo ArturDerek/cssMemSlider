@@ -1,1 +1,210 @@
 /*cssMemSliderTask*/
+@media(min-width:768px) {
+    #content {
+        background-color: #25282A;
+    }
+
+    .comment {
+        color: white;
+    }
+
+    .sliderWrapper {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #imagesWrap1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
+
+    input {
+        display: none;
+    }
+
+    .image {
+        width: 500%;
+    }
+
+    #wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #wrappper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    article {
+        width: 20%;
+        float: left;
+        text-align: center;
+
+    }
+
+    img {
+        width: 60%;
+        border-radius: 10px;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: center;
+    }
+
+    #fS:checked ~ .imagesWrap .image {
+        margin-left: 0;
+    }
+
+    #sS:checked ~ .imagesWrap .image {
+        margin-left: -100%;
+    }
+
+    #tS:checked ~ .imagesWrap .image {
+        margin-left: -200%;
+    }
+
+    #foS:checked ~ .imagesWrap .image {
+        margin-left: -300%;
+    }
+
+    .imagesWrap .image {
+        transition: all 1s;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    .controls .label {
+        background-color: #7FAAE8;
+        height: 0.5rem;
+        width: 0.5rem;
+        margin: 0.5rem;
+        border: 1px solid #7FAAE8;
+        border-radius: 0.5rem;
+    }
+
+    label:hover .label{
+        background-color: white;
+        border: 1px solid white;
+    }
+    label:active .label{
+        background-color: #BDBEBF;
+        border: 1px solid #BDBEBF;
+    }
+
+    #fS:checked ~ .controls :nth-child(1) div{
+        background-color: #25282A;
+    }
+    #sS:checked ~.controls :nth-child(2) div{
+        background-color: #25282A;
+    }
+    #tS:checked ~.controls :nth-child(3) div{
+        background-color: #25282A;
+    }
+    #foS:checked ~.controls :nth-child(4) div{
+        background-color: #25282A;
+    }
+}
+@media(max-width:768px){
+    #content {
+        background-color: #25282A;
+    }
+    .comment {
+        color: white;
+        text-align: left;
+        margin: 0 20%;
+    }
+    .sliderWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    #imagesWrap1 {
+        order: 1;
+    }
+    #imagesWrap2{
+        order: 3;
+    }
+    #imagesWrap3{
+        order: 2;
+    }
+    input {
+        display: none;
+    }
+    .image {
+        width: 500%;
+    }
+    #wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    #wrappper {
+        width: 100%;
+        overflow: hidden;
+    }
+    article  {
+        width: 20%;
+        float: left;
+        text-align: center;
+    }
+    img {
+        width: 60%;
+        border-radius: 10px;
+    }
+    .controls {
+        display: flex;
+        justify-content: center;
+    }
+    #fS:checked ~ .imagesWrap .image {
+        margin-left: 0;
+    }
+    #sS:checked ~ .imagesWrap .image {
+        margin-left: -100%;
+    }
+    #tS:checked ~ .imagesWrap .image {
+        margin-left: -200%;
+    }
+    #foS:checked ~ .imagesWrap .image {
+        margin-left: -300%;
+    }
+    .imagesWrap .image {
+        transition: all 1s;
+    }
+    label {
+        cursor: pointer;
+    }
+
+    .controls .label {
+        background-color: #7FAAE8;
+        height: 0.5rem;
+        width: 0.5rem;
+        margin: 0.5rem;
+        border: 1px solid #7FAAE8;
+        border-radius: 0.5rem;
+    }
+    label:active .label{
+        background-color: #BDBEBF;
+        border: 1px solid #BDBEBF;
+    }
+    .label:hover {
+        background-color: white;
+        border: 1px solid white;
+    }
+
+    #fS:checked ~ .controls :nth-child(1) div{
+        background-color: #25282A;
+    }
+    #sS:checked ~.controls :nth-child(2) div{
+        background-color: #25282A;
+    }
+    #tS:checked ~.controls :nth-child(3) div{
+        background-color: #25282A;
+    }
+    #foS:checked ~.controls :nth-child(4) div{
+        background-color: #25282A;
+    }
+}
