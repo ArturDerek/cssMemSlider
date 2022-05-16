@@ -1,79 +1,47 @@
-/*cssMemSliderTask*/
-#content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.wrapper{
-    width: 100%;
-
-}
-.sliderWrapper{
-    position: relative;
-    flex-direction: column;
-}
-.slider{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-.image{
-    width: 500%;
-}
-#wrapper{
-     width: 100%;
-     overflow: hidden;
-}
-article{
-    width: 20%;
-    float: left;
-}
-#fPict{
-    background-image: url("1.jpg");
-    z-index: 2;
-}
-#sPict{
-    background-image: url("2.jpg");
-}
-#tPict{
-    background-image: url("3.jpg");
-}
-#foPict{
-    background-image: url("4.jpg");
-}
-.comment{
-
-}
-.mem{
-    display: flex;
-    flex-wrap: wrap;
-}
-.controls{
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-#fS:checked ~ .imagesWrap .image{
-    margin-left: 0;
-}
-
-#sS:checked ~ .imagesWrap .image{
-    margin-left: -100%;
-}
-
-#tS:checked ~ .imagesWrap .image{
-    margin-left: -200%;
-}
-
-#foS:checked ~ .imagesWrap .image{
-    margin-left: -300%;
-}
-.imagesWrap .image{
-    transition:  all 1s;
-}
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport"
+     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>MemSlider</title>
+</head>
+    <body id="content">
+        <div class="wrapper">
+            <div class="sliderWrapper">
+                <input checked type="radio" name="slider" id="fS">
+                <input type="radio" name="slider" id="sS">
+                <input type="radio" name="slider" id="tS">
+                <input type="radio" name="slider" id="foS">
+                <div class="imagesWrap" id="imagesWrap1">
+                    <div id="wrapper">
+                        <div class="image">
+                            <article><img alt="" src="css/1.jpg"></article>
+                            <article><img alt="" src="css/2.jpg"></article>
+                            <article><img alt="" src="css/3.jpg"></article>
+                            <article><img alt="" src="css/4.jpg"></article>
+                        </div>
+                    </div>
+                </div>
+                <div class="imagesWrap" id="imagesWrap2">
+                    <div id="wrappper">
+                        <div class="image">
+                            <article><div class="comment">Лстй дльше!</div></article>
+                            <article><div class="comment">Just do it</div></article>
+                            <article><div class="comment">Press right!</div></article>
+                            <article><div class="comment">End</div></article>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls" id="imagesWrap3">
+                    <label for="fS"> <div class="label"id="1"></div></label>
+                    <label for="sS"><div class="label" id="2"></div></label>
+                    <label for="tS"><div class="label" id="3"></div></label>
+                    <label for="foS"><div class="label" id="4"></div></label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
